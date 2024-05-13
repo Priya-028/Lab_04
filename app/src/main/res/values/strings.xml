@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tasks&amp;Habits</string>
+    <string name="app_name">Tasks</string>
 
     <!-- Populating Habit Tags for DropDownMenu-->
     <string-array name="habits_tag_array">

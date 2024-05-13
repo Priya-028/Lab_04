@@ -22,6 +22,7 @@ class TasksAdapter :RecyclerView.Adapter<TasksAdapter.ViewHolder>() {
     var checkBoxOnClick: ((Tasks)-> Unit)? = null
 
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // inflates the layout_card_tasks
         val view = LayoutInflater.from(parent.context).inflate(R.layout.layout_card_tasks, parent, false)

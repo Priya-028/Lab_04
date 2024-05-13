@@ -19,13 +19,31 @@
         android:textSize="28sp"
         android:textStyle="bold" />
 
+    <!-- Add Search Bar -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_tasks"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:hint="Search">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- End of Search Bar -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_below="@id/tv_title_tasks"
+        android:layout_below="@id/search_layout"
         android:layout_margin="12dp"
         android:orientation="vertical">
 
@@ -35,9 +53,7 @@
             android:layout_height="wrap_content"
             tools:listitem="@layout/layout_card_tasks"/>
 
-
     </LinearLayout>
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_tasks_add"
@@ -51,7 +67,5 @@
         android:layout_marginBottom="20dp"
         android:contentDescription="Add new Task"
         android:src="@drawable/ic_add_24" />
-
-
 
 </RelativeLayout>

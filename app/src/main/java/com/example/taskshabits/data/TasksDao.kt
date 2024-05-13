@@ -21,4 +21,7 @@ interface TasksDao {
     @Query("SELECT COUNT(*) FROM table_tasks")
     fun getTasksCount(): LiveData<Int>
 
+    @Query("SELECT * FROM table_tasks WHERE TITLE LIKE '%' || :keyword || '%'")
+    fun searchTasks(keyword: String): LiveData<List<Tasks>>
+
 }

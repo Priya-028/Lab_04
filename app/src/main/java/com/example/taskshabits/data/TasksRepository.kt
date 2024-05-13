@@ -17,5 +17,6 @@ class TasksRepository(private val tasksDao: TasksDao) {
     fun deleteTaskData(tasks: Tasks){
         tasksDao.deleteTask(tasks)
     }
+    
 
 }
